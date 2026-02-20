@@ -1,17 +1,17 @@
 # AI-SoC-Road-Anomaly-Detection
 Bharat AI-SoC National Level Project – 2026
 
-## About the Project
+# About the Project
 This project focuses on detecting potholes, manholes, and speed breakers in real time using YOLOv8.  
 The system is deployed on Raspberry Pi 5 with a web camera module.
 
-## Objective
+# Objective
 - Real-time road defect detection
 - To improve road safety using a low cost AI solution
 - Deployment on Raspberry Pi
 - To implement real time detection using camera input
 
-## Model Details
+# Model Details
 Model: YOLOv8n  
 Image Size: 640x640  
 Classes:
@@ -19,11 +19,22 @@ Classes:
 - Manhole
 - Speedbreaker
 
-## Hardware Used
+# Hardware Used
 - Raspberry Pi 5
 - Web camera
 - SD Card
 - Power Supply
+
+# How to Run the Project
+
+1. Install Dependencies
+pip install -r requirements.txt
+
+2. Run Real-Time Detection
+python inference/detect.py
+
+3. Train the Model
+yolo detect train data=data.yaml model=yolov8n.pt epochs=80 imgsz=640
 
 # performance
 - The model was tested on validation data and deployed on Raspberry Pi 5 for real-time detection.
