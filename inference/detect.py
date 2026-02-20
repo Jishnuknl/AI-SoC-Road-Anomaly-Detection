@@ -3,7 +3,7 @@ import cv2
 
 def main():
     # Load trained YOLOv8 model
-    model = YOLO("best.pt")  # ensure best.pt is in root directory
+    model = YOLO("best.pt") 
 
     # Open webcam
     cap = cv2.VideoCapture(0)
