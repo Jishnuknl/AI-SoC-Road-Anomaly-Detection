@@ -42,7 +42,7 @@ yolo detect train data=data.yaml model=yolov8n.pt epochs=80 imgsz=640
 - Performance evaluation graphs and sample outputs are available in the results folder.
 
 # Future scope
-- Integrate LIDAR senor for depth based defect measurement.
+- Integrate LIDAR sensor for depth based defect measurement.
 - The system can be linked with digital maps to identify roads that have more defects.
 - Add GPS module to upload pothole location to cloud.  
 - Deploy on moving vehicles for smart city applications.
